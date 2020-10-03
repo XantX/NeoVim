@@ -1,0 +1,16 @@
+{
+	"cSpellExt.enableDictionaries": [
+		"spanish",
+		"medical-terms"
+	],
+  "cSpell.language": "en,es",
+  "cSpell.userWords": [
+    "Yara",
+    "gruvbox",
+    "networkx",
+    "numpy",
+    "okular",
+    "pyplot"
+  ],
+  "python.jediEnabled": false
+}
