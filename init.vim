@@ -24,24 +24,16 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 set showcmd
-"set fileformat=unix
-"filetype plugin on
 "config color
 colorscheme gruvbox
 let g:grubox_contrast_dark = "hard"
 "config Nerdtree
 let NERDTreeQuitOnOpen=1
-let g:NERDTreeMinimalUI=1
+let g:airline#extensions#vimtex#enabled = 1
+let g:airline#extensions#vimtex#left = "{"
+let g:airline#extensions#vimtex#right = "}"
 "Atajos
 let mapleader = " "
-"Comandos de busqueda de docs
-"Ubicaciones de el programa
-let g:zv_zeal_executable = 'C:\Users\SEBASTIAN\Desktop\Cosas\Cosas de programacion\Zeal\zeal.exe'
-nmap gzz <Plug>Zeavim
-vmap gzz <Plug>ZVVisSelection
-nmap <Leader>z <Plug>ZVKeyDocset
-nmap gZ <Plug>ZVKeyDocset<CR>
-nmap gz <Plug>ZVOperator
 "Guargar y cerrar
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
@@ -64,3 +56,8 @@ nmap <leader>c <plug>NERDCommenterToggle
 vmap <leader>c <plug>NERDCommenterToggle<cr>gv
 "Spell checker
 nmap <leader>a <Plug>(coc-codeaction-selected)
+" GoTo code navigation Coc
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)

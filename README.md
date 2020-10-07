@@ -15,7 +15,5 @@ PluginManager:[vim-plug](https://github.com/junegunn/vim-plug):muscle:
 * [Plug 'ryanoasis/vim-devicons'](https://vimawesome.com/plugin/vim-devicons)
 * [Plug 'preservim/nerdcommenter'](https://vimawesome.com/plugin/the-nerd-commenter)
 * [Plug 'norcalli/nvim-colorizer.lua'](https://vimawesome.com/plugin/nvim-colorizer-lua)
-* [Plug 'KabbAmine/zeavim.vim'](https://vimawesome.com/plugin/zeavim)
 * [Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'}](https://vimawesome.com/plugin/markdown-preview-nvim)
 * [Plug 'neoclide/coc.nvim', {'branch': 'release'}](https://vimawesome.com/plugin/coc-nvim)
-* [Plug 'lervag/vimtex'](https://vimawesome.com/plugin/vimtex)
