@@ -3,9 +3,10 @@ source $HOME/AppData/Local/nvim/vim-plug/plug-config.vim
 syntax enable
 set rnu
 set mouse=a
+set nowrap
 set cursorline
 set noswapfile
-set clipboard=unnamed
+set clipboard=unnamedplus
 set scrolloff=7
 set backspace=indent,eol,start
 set t_Co=256
@@ -24,6 +25,8 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 set showcmd
+set noshowmode
+set showtabline=2
 "config color
 colorscheme gruvbox
 let g:grubox_contrast_dark = "hard"
@@ -41,6 +44,8 @@ nmap <Leader>q :q<CR>
 nmap <Leader>vs :vsp <CR>
 "Apertura de configuracion
 nmap <Leader>rc :e ~/AppData/Local/nvim/init.vim <CR>
+"open config windows terminal
+nmap <Leader>rt :e ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json<CR>
 "Nerdtree
 nmap <Leader>nt :NERDTreeFind<CR>
 "movimiento entre buffers
@@ -61,3 +66,16 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+"comandos para pasar de espacio de escritura en snippets
+
+" Use <C-j> for jump to next placeholder, it's default of coc.nvim
+let g:coc_snippet_next = '<c-j>'
+
+" Use <C-k> for jump to previous placeholder, it's default of coc.nvim
+let g:coc_snippet_prev = '<c-k>'
+"Comandos para hacer resize con alt
+nnoremap <M-j> :resize -2<CR>
+nnoremap <M-k> :resize +2<CR>
+nnoremap <M-h> :vertical resize -2<CR>
+nnoremap <M-l> :vertical resize +2<CR>
+

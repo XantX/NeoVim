@@ -16,4 +16,20 @@ PluginManager:[vim-plug](https://github.com/junegunn/vim-plug):muscle:
 * [Plug 'preservim/nerdcommenter'](https://vimawesome.com/plugin/the-nerd-commenter)
 * [Plug 'norcalli/nvim-colorizer.lua'](https://vimawesome.com/plugin/nvim-colorizer-lua)
 * [Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'}](https://vimawesome.com/plugin/markdown-preview-nvim)
+* [Plug 'honza/vim-snippets'](https://vimawesome.com/plugin/vim-snippets)
 * [Plug 'neoclide/coc.nvim', {'branch': 'release'}](https://vimawesome.com/plugin/coc-nvim)
+
+## Coc-extencions
+
+* coc-vimlsp
+* coc-spell-checker
+* coc-snippets
+* coc-markmap
+* coc-marketplace
+* coc-markdownlint
+* coc-cspell-dicts
+* coc-tsserver
+* coc-python
+* coc-json
+* coc-html
+* coc-css

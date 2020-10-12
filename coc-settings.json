@@ -12,5 +12,6 @@
     "okular",
     "pyplot"
   ],
-  "python.jediEnabled": false
+  "python.jediEnabled": false,
+  "snippets.userSnippetsDirectory": "~/AppData/Local/nvim/snips"
 }
