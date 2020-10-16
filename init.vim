@@ -32,9 +32,10 @@ colorscheme gruvbox
 let g:grubox_contrast_dark = "hard"
 "config Nerdtree
 let NERDTreeQuitOnOpen=1
-let g:airline#extensions#vimtex#enabled = 1
-let g:airline#extensions#vimtex#left = "{"
-let g:airline#extensions#vimtex#right = "}"
+let g:webdevicons_enable_nerdtree = 1
+let g:webdevicons_enable_airline_tabline = 1
+let g:webdevicons_enable_airline_statusline = 1
+let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
 "Atajos
 let mapleader = " "
 "Guargar y cerrar
@@ -57,10 +58,13 @@ nmap <Leader>gc :Gcommit<CR>
 "terminal
 nmap <Leader>t :terminal<CR>
 "NerdCommenter
-nmap <leader>c <plug>NERDCommenterToggle
-vmap <leader>c <plug>NERDCommenterToggle<cr>gv
+nmap <Leader>c <plug>NERDCommenterToggle
+vmap <Leader>c <plug>NERDCommenterToggle<cr>gv
 "Spell checker
-nmap <leader>a <Plug>(coc-codeaction-selected)
+nmap <Leader>a <Plug>(coc-codeaction-selected)
+"create carpeta windows
+nmap <Leader>md :!mkdir  
+nmap <Leader>mf :!touch 
 " GoTo code navigation Coc
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
@@ -78,4 +82,5 @@ nnoremap <M-j> :resize -2<CR>
 nnoremap <M-k> :resize +2<CR>
 nnoremap <M-h> :vertical resize -2<CR>
 nnoremap <M-l> :vertical resize +2<CR>
-
+"Comandos de prettier
+nmap <leader>f :Prettier<CR> 

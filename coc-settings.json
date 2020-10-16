@@ -10,6 +10,7 @@
     "networkx",
     "numpy",
     "okular",
+    "posx",
     "pyplot"
   ],
   "python.jediEnabled": false,
