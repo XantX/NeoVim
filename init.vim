@@ -1,9 +1,21 @@
+            "\' █████ █████                       █████    █████ █████',
+            "\'░░███ ░░███                       ░░███    ░░███ ░░███ ',
+            "\'░░███ ███    ██████   ████████   ███████   ░░███ ███  ',
+            "\'  ░░█████    ░░░░░███ ░░███░░███ ░░░███░     ░░█████   ',
+            "\'   ███░███    ███████  ░███ ░███   ░███       ███░███  ',
+            "\'  ███ ░░███  ███░░███  ░███ ░███   ░███ ███  ███ ░░███ ',
+            "\' █████ █████░░████████ ████ █████  ░░█████  █████ █████',
+            "\'░░░░░ ░░░░░  ░░░░░░░░ ░░░░ ░░░░░    ░░░░░  ░░░░░ ░░░░░ ',
+            "------------------------------------------------------------
+            
 source $HOME/AppData/Local/nvim/vim-plug/plugins.vim
 source $HOME/AppData/Local/nvim/vim-plug/plug-config.vim
 syntax enable
 set rnu
+set number
+set hidden
 set mouse=a
-set nowrap
+set numberwidth=1
 set cursorline
 set noswapfile
 set clipboard=unnamedplus
@@ -14,7 +26,7 @@ set termguicolors
 set ruler
 set encoding=utf-8
 set showmatch
-set laststatus=2
+set laststatus=1
 set incsearch
 set wildmenu
 set autoindent
@@ -27,9 +39,12 @@ set expandtab
 set showcmd
 set noshowmode
 set showtabline=2
+set autochdir
+filetype indent on
 "config color
 colorscheme gruvbox
 let g:grubox_contrast_dark = "hard"
+:hi Comment ctermfg=245 guifg=#83a598
 "config Nerdtree
 let NERDTreeQuitOnOpen=1
 let g:webdevicons_enable_nerdtree = 1
@@ -51,12 +66,13 @@ nmap <Leader>rt :e ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8b
 nmap <Leader>nt :NERDTreeFind<CR>
 "movimiento entre buffers
 nmap <Leader>ne :bnext<CR>
+nmap <Leader>pe :bprev<CR>
 nmap <Leader>e :bd<CR>
 "Atajos de git
 nmap <Leader>gs :G<CR>
 nmap <Leader>gc :Gcommit<CR>
 "terminal
-nmap <Leader>t :terminal<CR>
+nmap <Leader>t :vsp <CR> :terminal<CR>
 "NerdCommenter
 nmap <Leader>c <plug>NERDCommenterToggle
 vmap <Leader>c <plug>NERDCommenterToggle<cr>gv
@@ -84,3 +100,4 @@ nnoremap <M-h> :vertical resize -2<CR>
 nnoremap <M-l> :vertical resize +2<CR>
 "Comandos de prettier
 nmap <leader>f :Prettier<CR> 
+

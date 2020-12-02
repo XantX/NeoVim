@@ -13,6 +13,8 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'honza/vim-snippets'
 Plug 'mhinz/vim-startify'
+"Plug 'tpope/vim-surround'
+Plug 'octol/vim-cpp-enhanced-highlight'
 call plug#end()
 
 
