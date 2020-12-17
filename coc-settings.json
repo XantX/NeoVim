@@ -14,5 +14,8 @@
     "pyplot"
   ],
   "python.jediEnabled": false,
-  "snippets.userSnippetsDirectory": "~/AppData/Local/nvim/snips"
+  "snippets.userSnippetsDirectory": "~/AppData/Local/nvim/snips",
+  "coc.source.emoji.filetypes": [
+      "markdown"
+  ]
 }

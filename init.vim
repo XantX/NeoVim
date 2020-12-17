@@ -101,3 +101,8 @@ nnoremap <M-l> :vertical resize +2<CR>
 "Comandos de prettier
 nmap <leader>f :Prettier<CR> 
 
+"Comandos para guardar sessiones
+":SLoad       load a session
+":SSave[!]    save a session
+":SDelete[!]  delete a session
+":SClose      close a session

@@ -131,7 +131,7 @@ let g:startify_lists = [
 let g:startify_bookmarks = [
             \ { 'r': '~/Desktop/Cosas/Cosas de programacion' },
             \ { 'c': '~/Desktop/Cosas/Cosas de programacion/C++' },
-            \ { 'c': '~/Desktop/Cosas/Cosas de programacion/Python' },
+            \ { 'p': '~/Desktop/Cosas/Cosas de programacion/Python' },
             \ { 'i': '~/AppData/Local/nvim/init.vim' },
             \ { 'g': '~/.gitconfig ' }
             \ ]
@@ -151,10 +151,10 @@ let g:startify_session_autoload = 1
             "\'░░░░░ ░░░░░  ░░░░░░░░ ░░░░ ░░░░░    ░░░░░  ░░░░░ ░░░░░ ',
             
 
-let g:kite_supported_lenguages = ['javascript', 'python'] 
+let g:kite_supported_lenguages = ['python'] 
 "Coc
 autocmd FileType python let b:coc_suggest_disable = 1
-autocmd FileType javascript let b:coc_suggest_disable = 1
+"autocmd FileType javascript let b:coc_suggest_disable = 1
 autocmd FileType scss setl iskeyword+=@-@
 
 "Config de barra de estados
@@ -164,7 +164,7 @@ let airline#extensions#coc#warning_symbol = 'Warning:'
 
 function! AirlineInit()
     "let g:airline_section_c = airline#section#create(['file'])
-    let g:airline_section_c = airline#section#create(['file',' ','CocStatus: ','%{coc#status()}'])
+    let g:airline_section_c = airline#section#create(['file',' ','%{coc#status()}'])
     "let g:airline_section_c = airline#section#create_left(['file'])
     let g:airline_section_b = airline#section#create(['branch','%{kite#statusline()}'])
     "let g:airline_section_y = airline#section#create([''])
