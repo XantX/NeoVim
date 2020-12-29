@@ -27,6 +27,9 @@ let g:markdown_fenced_lenguages = [
 	\'help'
 	\]
 let g:mkdp_auto_start = 1
+
+let g:mkdp_browser = 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Google Chrome'
+
 "Config Coc
 " TextEdit might fail if hidden is not set.
 set hidden
@@ -151,9 +154,8 @@ let g:startify_session_autoload = 1
             "\'░░░░░ ░░░░░  ░░░░░░░░ ░░░░ ░░░░░    ░░░░░  ░░░░░ ░░░░░ ',
             
 
-let g:kite_supported_lenguages = ['python'] 
 "Coc
-autocmd FileType python let b:coc_suggest_disable = 1
+"autocmd FileType python let b:coc_suggest_disable = 1
 "autocmd FileType javascript let b:coc_suggest_disable = 1
 autocmd FileType scss setl iskeyword+=@-@
 
@@ -166,7 +168,7 @@ function! AirlineInit()
     "let g:airline_section_c = airline#section#create(['file'])
     let g:airline_section_c = airline#section#create(['file',' ','%{coc#status()}'])
     "let g:airline_section_c = airline#section#create_left(['file'])
-    let g:airline_section_b = airline#section#create(['branch','%{kite#statusline()}'])
+    let g:airline_section_b = airline#section#create(['branch'])
     "let g:airline_section_y = airline#section#create([''])
     "let g:airline_section_x = airline#section#create_right(['ffnec','foo'])
     "let g:airline_section_z = airline#section#create_right(['%l','%c'])
@@ -190,3 +192,14 @@ endfunction
 
 "autocmd VimEnter * call AccentDemo()
 autocmd User AirlineAfterInit call AirlineInit()
+"Config de terminal flotante
+let g:floaterm_title = "TERMINAL: $1/$2"
+let g:floaterm_width = 0.7
+let g:floaterm_height = 0.7
+
+let g:floaterm_keymap_toggle = '<F6>'
+let g:floaterm_keymap_next   = '<F7>'
+"let g:floaterm_keymap_new    = '<F8>'
+nnoremap <silent> <F8> :FloatermNew powershell<CR>
+let g:floaterm_keymap_kill   = '<F9>'
+let g:floaterm_gitcommit = 'split'

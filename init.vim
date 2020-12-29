@@ -44,13 +44,18 @@ filetype indent on
 "config color
 colorscheme gruvbox
 let g:grubox_contrast_dark = "hard"
+"Color de comentarios
 :hi Comment ctermfg=245 guifg=#83a598
+"Color de terminal flotante
+:hi FloatermBorder guifg=cyan
 "config Nerdtree
 let NERDTreeQuitOnOpen=1
 let g:webdevicons_enable_nerdtree = 1
 let g:webdevicons_enable_airline_tabline = 1
 let g:webdevicons_enable_airline_statusline = 1
 let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
+"Remapeo
+
 "Atajos
 let mapleader = " "
 "Guargar y cerrar
@@ -100,6 +105,9 @@ nnoremap <M-h> :vertical resize -2<CR>
 nnoremap <M-l> :vertical resize +2<CR>
 "Comandos de prettier
 nmap <leader>f :Prettier<CR> 
+
+"To map <Esc> to exit terminal-mode:
+:tnoremap <Esc> <C-\><C-n>
 
 "Comandos para guardar sessiones
 ":SLoad       load a session

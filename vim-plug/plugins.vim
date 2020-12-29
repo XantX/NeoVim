@@ -15,6 +15,8 @@ Plug 'honza/vim-snippets'
 Plug 'mhinz/vim-startify'
 "Plug 'tpope/vim-surround'
 Plug 'octol/vim-cpp-enhanced-highlight'
+"Plugin para terminal flotante
+Plug 'voldikss/vim-floaterm'
 call plug#end()
 
 
