@@ -17,6 +17,8 @@ Plug 'mhinz/vim-startify'
 Plug 'octol/vim-cpp-enhanced-highlight'
 "Plugin para terminal flotante
 Plug 'voldikss/vim-floaterm'
+"Plug 'jelera/vim-javascript-syntax'
+Plug 'pangloss/vim-javascript' 
 call plug#end()
 
 

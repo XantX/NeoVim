@@ -7,7 +7,7 @@
             "\' █████ █████░░████████ ████ █████  ░░█████  █████ █████',
             "\'░░░░░ ░░░░░  ░░░░░░░░ ░░░░ ░░░░░    ░░░░░  ░░░░░ ░░░░░ ',
             "------------------------------------------------------------
-            
+
 source $HOME/AppData/Local/nvim/vim-plug/plugins.vim
 source $HOME/AppData/Local/nvim/vim-plug/plug-config.vim
 syntax enable
@@ -15,6 +15,7 @@ set rnu
 set number
 set hidden
 set mouse=a
+set nowrap
 set numberwidth=1
 set cursorline
 set noswapfile
@@ -43,7 +44,7 @@ set autochdir
 filetype indent on
 "config color
 colorscheme gruvbox
-let g:grubox_contrast_dark = "hard"
+let g:gruvbox_contrast_dark = "hard"
 "Color de comentarios
 :hi Comment ctermfg=245 guifg=#83a598
 "Color de terminal flotante

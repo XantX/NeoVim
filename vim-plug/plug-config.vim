@@ -22,12 +22,12 @@ endif
 "colorizar
 lua require 'colorizer'.setup()
 "Configuracion de markdown
-let g:markdown_fenced_lenguages = [
-	\'vim'
-	\'help'
-	\]
+"let g:markdown_fenced_lenguages = [
+	"\'vim'
+	"\'help'
+	"\]
 let g:mkdp_auto_start = 1
-
+"let g:mkdp_open_to_the_world = 1
 let g:mkdp_browser = 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Google Chrome'
 
 "Config Coc
@@ -202,4 +202,4 @@ let g:floaterm_keymap_next   = '<F7>'
 "let g:floaterm_keymap_new    = '<F8>'
 nnoremap <silent> <F8> :FloatermNew powershell<CR>
 let g:floaterm_keymap_kill   = '<F9>'
-let g:floaterm_gitcommit = 'split'
+let g:floaterm_gitcommit = 'vsplit'

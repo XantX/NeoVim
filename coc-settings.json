@@ -5,6 +5,8 @@
 	],
   "cSpell.language": "en,es",
   "cSpell.userWords": [
+    "BOTTOKEN",
+    "Xant",
     "Yara",
     "gruvbox",
     "networkx",
@@ -16,6 +18,7 @@
   "python.jediEnabled": false,
   "snippets.userSnippetsDirectory": "~/AppData/Local/nvim/snips",
   "coc.source.emoji.filetypes": [
-      "markdown"
+      "markdown",
+      "javascript"
   ]
 }
