@@ -163,12 +163,11 @@ autocmd FileType scss setl iskeyword+=@-@
 let g:airline#extensions#coc#enabled = 1
 let airline#extensions#coc#error_symbol = 'Error:'
 let airline#extensions#coc#warning_symbol = 'Warning:'
-
 function! AirlineInit()
     "let g:airline_section_c = airline#section#create(['file'])
     let g:airline_section_c = airline#section#create(['file',' ','%{coc#status()}'])
     "let g:airline_section_c = airline#section#create_left(['file'])
-    let g:airline_section_b = airline#section#create(['branch'])
+    let g:airline_section_b = airline#section#create(['branch',' ','%{battery#component()}'])
     "let g:airline_section_y = airline#section#create([''])
     "let g:airline_section_x = airline#section#create_right(['ffnec','foo'])
     "let g:airline_section_z = airline#section#create_right(['%l','%c'])

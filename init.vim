@@ -33,9 +33,9 @@ set wildmenu
 set autoindent
 set smartindent 
 set guioptions=i
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set expandtab
 set showcmd
 set noshowmode
@@ -46,7 +46,7 @@ filetype indent on
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = "hard"
 "Color de comentarios
-:hi Comment ctermfg=245 guifg=#83a598
+:hi Comment ctermfg=245 guifg=#58A2A3
 "Color de terminal flotante
 :hi FloatermBorder guifg=cyan
 "config Nerdtree

@@ -19,6 +19,8 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'voldikss/vim-floaterm'
 "Plug 'jelera/vim-javascript-syntax'
 Plug 'pangloss/vim-javascript' 
+"Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
+Plug 'lambdalisue/battery.vim'
 call plug#end()
 
 
