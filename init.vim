@@ -47,8 +47,19 @@ colorscheme gruvbox
 let g:gruvbox_contrast_dark = "hard"
 "Color de comentarios
 :hi Comment ctermfg=245 guifg=#58A2A3
+"Color de las etiquetas xml para react
+:hi xmlEndTag ctermfg=208 guifg=#fe8019
+:hi xmlTag ctermfg=208 guifg=#fe8019
+:hi xmlTagName ctermfg=208 guifg=#fe8019
+"Color de las etiquetas para html
+":hi htmlEndTag ctermfg=208 guifg=#fe8019
+":hi htmlTag ctermfg=208 guifg=#fe8019
+":hi htmlTagName ctermfg=208 guifg=#fe8019
+
+"Nerdtree Colors
+:hi NERDTreeDir ctermfg=208 guifg=#AB90D1
 "Color de terminal flotante
-:hi FloatermBorder guifg=cyan
+:hi FloatermBorder guifg=#CF8F05
 "config Nerdtree
 let NERDTreeQuitOnOpen=1
 let g:webdevicons_enable_nerdtree = 1

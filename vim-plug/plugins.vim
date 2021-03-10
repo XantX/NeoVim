@@ -21,6 +21,12 @@ Plug 'voldikss/vim-floaterm'
 Plug 'pangloss/vim-javascript' 
 "Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
 Plug 'lambdalisue/battery.vim'
+"Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+"Plug 'nvim-treesitter/playground'
+"Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'ianks/vim-tsx'
+Plug 'mxw/vim-jsx'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 call plug#end()
 
 
