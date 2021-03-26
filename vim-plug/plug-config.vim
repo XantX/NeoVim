@@ -1,5 +1,4 @@
 "Configuraciones de airline
-
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#formatter='default'
@@ -17,17 +16,12 @@ let g:airline#extensions#zoomwintab#enabled = 1
 if (has("termguicolors"))
 	set termguicolors
 endif
-"Secciones de airline
 
+"Secciones de airline
 "colorizar
 lua require 'colorizer'.setup()
-"Configuracion de markdown
-"let g:markdown_fenced_lenguages = [
-	"\'vim'
-	"\'help'
-	"\]
+"Config markdown
 let g:mkdp_auto_start = 1
-"let g:mkdp_open_to_the_world = 1
 let g:mkdp_browser = 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Google Chrome'
 
 "Config Coc
@@ -156,8 +150,6 @@ let g:startify_session_autoload = 1
             
 
 "Coc
-"autocmd FileType python let b:coc_suggest_disable = 1
-"autocmd FileType javascript let b:coc_suggest_disable = 1
 autocmd FileType scss setl iskeyword+=@-@
 
 "Config de barra de estados
@@ -205,28 +197,12 @@ let g:floaterm_keymap_kill   = '<F9>'
 let g:floaterm_gitcommit = 'vsplit'
 
 " Color para nerdttree
-"let g:NERDTreeFileExtensionHighlightFullName = 1
-"let g:NERDTreeExactMatchHighlightFullName = 1
-"let g:NERDTreePatternMatchHighlightFullName = 1
-
 let g:NERDTreeHighlightFolders = 1 " enables folder icon highlighting using exact match
 let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
 
-let s:brown = "905532"
-let s:aqua =  "3AFFDB"
-let s:blue = "689FB6"
-let s:darkBlue = "44788E"
-let s:purple = "834F79"
-let s:lightPurple = "834F79"
-let s:red = "AE403F"
-let s:beige = "F5C06F"
-let s:yellow = "F09F17"
-let s:orange = "D4843E"
-let s:darkOrange = "F16529"
-let s:pink = "CB6F6F"
-let s:salmon = "EE6E73"
-let s:green = "8FAA54"
-let s:lightGreen = "31B53E"
-let s:white = "FFFFFF"
-let s:rspec_red = 'FE405F'
-let s:git_orange = 'F54D27'
+"config Nerdtree
+let NERDTreeQuitOnOpen=1
+let g:webdevicons_enable_nerdtree = 1
+let g:webdevicons_enable_airline_tabline = 1
+let g:webdevicons_enable_airline_statusline = 1
+let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1

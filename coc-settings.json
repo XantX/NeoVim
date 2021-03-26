@@ -1,8 +1,5 @@
 {
-	"cSpellExt.enableDictionaries": [
-		"spanish",
-		"medical-terms"
-	],
+  "cSpellExt.enableDictionaries": ["spanish", "medical-terms"],
   "cSpell.language": "en,es",
   "cSpell.userWords": [
     "BOTTOKEN",
@@ -16,12 +13,17 @@
     "pyplot"
   ],
   "python.jediEnabled": false,
+
   "codeLens.enable": true,
+  "java.referencesCodeLens.enabled": true,
+  "java.completion.enabled": true,
+
+  "java.jdt.ls.vmargs": "-javaagent:/javaThings/lombok.jar",
+
   "snippets.userSnippetsDirectory": "~/AppData/Local/nvim/snips",
-  "coc.source.emoji.filetypes": [
-      "markdown",
-      "javascript"
-  ],
+
+  "coc.source.emoji.filetypes": ["markdown", "javascript"],
+
   "suggest.completionItemKindLabels": {
     "method": "  ",
     "function": "  ",
@@ -49,5 +51,4 @@
     "value": "  ",
     "enumMember": "  "
   }
-  
 }

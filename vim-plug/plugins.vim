@@ -1,32 +1,41 @@
 "Zona de plugins
 call plug#begin('~/AppData/Local/nvim/Plugins')
+"Customizations
 Plug 'morhetz/gruvbox'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'scrooloose/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'norcalli/nvim-colorizer.lua'
+Plug 'mhinz/vim-startify'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'lambdalisue/battery.vim'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'sheerun/vim-polyglot'
+"IDE
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
-Plug 'ryanoasis/vim-devicons'
 Plug 'preservim/nerdcommenter'
-Plug 'norcalli/nvim-colorizer.lua'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'honza/vim-snippets'
-Plug 'mhinz/vim-startify'
-"Plug 'tpope/vim-surround'
+"Markdown Plugin
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+"Cpp Plugin
 Plug 'octol/vim-cpp-enhanced-highlight'
 "Plugin para terminal flotante
 Plug 'voldikss/vim-floaterm'
-"Plug 'jelera/vim-javascript-syntax'
-Plug 'pangloss/vim-javascript' 
-"Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
-Plug 'lambdalisue/battery.vim'
-"Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-"Plug 'nvim-treesitter/playground'
-"Plug 'nvim-treesitter/nvim-treesitter'
+"React and javascript Plugins
 Plug 'ianks/vim-tsx'
 Plug 'mxw/vim-jsx'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'pangloss/vim-javascript' 
+
+"C# plugins not found in pc
+"Plug 'omnisharp/omnisharp-vim'
+"Plug 'nickspoons/vim-sharpenup'
+
+"Bases de datos
+Plug 'tpope/vim-dadbod'
+Plug 'kristijanhusak/vim-dadbod-ui'
+Plug 'vim-scripts/dbext.vim'
 call plug#end()
 
 
