@@ -41,6 +41,9 @@ set showcmd
 set noshowmode
 set showtabline=2
 set autochdir
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 "config color
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = "hard"
