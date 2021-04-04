@@ -54,10 +54,6 @@ let g:gruvbox_contrast_dark = "hard"
 :hi xmlTag ctermfg=208 guifg=#fe8019
 :hi xmlTagName ctermfg=208 guifg=#fe8019
 "Color de las etiquetas para html
-":hi htmlEndTag ctermfg=208 guifg=#fe8019
-":hi htmlTag ctermfg=208 guifg=#fe8019
-":hi htmlTagName ctermfg=208 guifg=#fe8019
-"
 :hi Normal guibg=NONE ctermbg=NONE
 
 "Nerdtree Colors
