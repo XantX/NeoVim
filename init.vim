@@ -76,6 +76,8 @@ nmap <Leader>vs :vsp <CR>
 nmap <Leader>rc :e ~/AppData/Local/nvim/init.vim <CR>
 "open config windows terminal
 nmap <Leader>ra :e ~/AppData/Roaming/alacritty/alacritty.yml<CR>
+"open ohmyposh config
+nmap <Leader>oh :e ~/.oh-my-posh.omp.json<CR>
 "Nerdtree
 nmap <Leader>nt :NERDTreeFind<CR>
 "movimiento entre buffers
