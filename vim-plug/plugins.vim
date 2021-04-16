@@ -36,6 +36,9 @@ Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
 Plug 'vim-scripts/dbext.vim'
+"Flutter config
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'thosakwe/vim-flutter'
 call plug#end()
 
 
