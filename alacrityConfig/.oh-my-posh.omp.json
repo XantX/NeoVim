@@ -45,7 +45,7 @@
           "foreground": "#b16286",
           "properties": {
             "display_exit_code": false,
-            "prefix": ""
+            "prefix": " "
           },
           "style": "plain",
           "type": "exit"

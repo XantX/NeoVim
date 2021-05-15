@@ -18,8 +18,6 @@
   "java.referencesCodeLens.enabled": true,
   "java.completion.enabled": true,
 
-  "java.jdt.ls.vmargs": "-javaagent:/javaThings/lombok.jar",
-
   "snippets.userSnippetsDirectory": "~/AppData/Local/nvim/snips",
 
   "coc.source.emoji.filetypes": ["markdown", "javascript"],
