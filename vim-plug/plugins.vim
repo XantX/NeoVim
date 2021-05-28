@@ -17,6 +17,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'preservim/nerdcommenter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'honza/vim-snippets'
+Plug 'alvan/vim-closetag'
+Plug 'tpope/vim-surround'
 "Markdown Plugin
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 "Cpp Plugin
@@ -26,7 +28,7 @@ Plug 'voldikss/vim-floaterm'
 "React and javascript Plugins
 Plug 'ianks/vim-tsx'
 Plug 'mxw/vim-jsx'
-Plug 'pangloss/vim-javascript' 
+Plug 'pangloss/vim-javascript'
 
 "C# plugins not found in pc
 "Plug 'omnisharp/omnisharp-vim'

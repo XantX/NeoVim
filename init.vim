@@ -10,7 +10,7 @@
 
 source $HOME/AppData/Local/nvim/vim-plug/plugins.vim
 source $HOME/AppData/Local/nvim/vim-plug/plug-config.vim
-syntax enable
+syntax on
 filetype on
 filetype indent plugin on
 set rnu
@@ -25,16 +25,16 @@ set clipboard=unnamedplus
 set scrolloff=7
 set backspace=indent,eol,start
 set t_Co=256
-set termguicolors  
+set termguicolors
 set ruler
 set encoding=utf-8
 scriptencoding utf-8
 set showmatch
-set laststatus=1
+set laststatus=2
 set incsearch
 set wildmenu
 set autoindent
-set smartindent 
+set smartindent
 set guioptions=i
 set expandtab
 set showcmd
@@ -55,11 +55,12 @@ let g:gruvbox_contrast_dark = "hard"
 :hi xmlTagName ctermfg=208 guifg=#fe8019
 "Color de las etiquetas para html
 :hi Normal guibg=NONE ctermbg=NONE
-
 "Nerdtree Colors
 :hi NERDTreeDir ctermfg=208 guifg=#AB90D1
 "Color de terminal flotante
 :hi FloatermBorder guifg=#CF8F05
+"colorizar
+lua require 'colorizer'.setup()
 "Remapeo
 "Atajos
 let mapleader = " "
@@ -68,7 +69,7 @@ nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 "split vertical
 nmap <Leader>vs :vsp <CR>
-"Apertura de configuracion
+"Apertura de configuración
 nmap <Leader>rc :e ~/AppData/Local/nvim/init.vim <CR>
 "open config windows terminal
 nmap <Leader>ra :e ~/AppData/Roaming/alacritty/alacritty.yml<CR>
@@ -93,9 +94,8 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> rn <Plug>(coc-rename) 
+nmap <silent> rn <Plug>(coc-rename)
 "comandos para pasar de espacio de escritura en snippets
-
 " Use <C-j> for jump to next placeholder, it's default of coc.nvim
 let g:coc_snippet_next = '<c-j>'
 
@@ -108,13 +108,19 @@ nnoremap <M-h> :vertical resize -2<CR>
 nnoremap <M-l> :vertical resize +2<CR>
 
 "Comandos de prettier
-nmap <leader>f :Prettier<CR> 
-
+nmap <leader>f :Prettier<CR>
 "To map <Esc> to exit terminal-mode:
 :tnoremap <Esc> <C-\><C-n>
 
-"Comandos para guardar sessiones
+"Comandos para guardar sesiones
 ":SLoad       load a session
 ":SSave[!]    save a session
 ":SDelete[!]  delete a session
 ":SClose      close a session
+"
+"Comandos para usar sorround
+" change tags cstt
+" delete tags dst
+" change marksc cs<mark><to mark>
+" delte mark ds<mark>
+" new tag ysiwt

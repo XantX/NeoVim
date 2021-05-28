@@ -1,22 +1,38 @@
 {
+  "pairs.enableCharacters": [
+    "(",
+    "[",
+    "{",
+    "'",
+    "\"",
+    "`"
+  ],
   "cSpellExt.enableDictionaries": ["spanish", "medical-terms"],
   "cSpell.language": "en,es",
   "cSpell.userWords": [
     "BOTTOKEN",
+    "Clearbit",
+    "Sidenav",
     "Xant",
     "Yara",
+    "alacritty",
+    "bprev",
+    "floaterm",
     "gruvbox",
+    "linenr",
+    "mkdp",
     "networkx",
     "numpy",
+    "nvim",
+    "ohmyposh",
     "okular",
     "posx",
-    "pyplot"
+    "pyplot",
+    "startify"
   ],
   "python.jediEnabled": false,
 
   "codeLens.enable": true,
-  "java.referencesCodeLens.enabled": true,
-  "java.completion.enabled": true,
 
   "snippets.userSnippetsDirectory": "~/AppData/Local/nvim/snips",
 
@@ -48,5 +64,6 @@
     "constructor": "  ",
     "value": "  ",
     "enumMember": "  "
-  }
+  },
+  "clangd.path": "C:\\Users\\hp_Xa\\AppData\\Local\\coc\\extensions\\coc-clangd-data\\install\\12.0.0\\clangd_12.0.0\\bin\\clangd.exe"
 }
