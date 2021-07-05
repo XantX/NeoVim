@@ -1,15 +1,15 @@
 "Zona de plugins
 call plug#begin('~/AppData/Local/nvim/Plugins')
 "Customizations
+Plug 'sheerun/vim-polyglot'
 Plug 'morhetz/gruvbox'
 Plug 'ryanoasis/vim-devicons'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'mhinz/vim-startify'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'lambdalisue/battery.vim'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'sheerun/vim-polyglot'
+Plug 'itchyny/lightline.vim'
+Plug 'ap/vim-buftabline'
 "IDE
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'scrooloose/nerdtree'

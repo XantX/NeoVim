@@ -11,8 +11,7 @@
 source $HOME/AppData/Local/nvim/vim-plug/plugins.vim
 source $HOME/AppData/Local/nvim/vim-plug/plug-config.vim
 syntax on
-filetype on
-filetype indent plugin on
+filetype plugin on
 set rnu
 set number
 set hidden
@@ -28,7 +27,6 @@ set t_Co=256
 set termguicolors
 set ruler
 set encoding=utf-8
-scriptencoding utf-8
 set showmatch
 set laststatus=2
 set incsearch
@@ -47,18 +45,10 @@ set shiftwidth=2
 "config color
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = "hard"
-"Color de comentarios
-:hi Comment ctermfg=245 guifg=#58A2A3
-"Color de las etiquetas xml para react
-:hi xmlEndTag ctermfg=208 guifg=#fe8019
-:hi xmlTag ctermfg=208 guifg=#fe8019
-:hi xmlTagName ctermfg=208 guifg=#fe8019
-"Color de las etiquetas para html
-:hi Normal guibg=NONE ctermbg=NONE
-"Nerdtree Colors
-:hi NERDTreeDir ctermfg=208 guifg=#AB90D1
 "Color de terminal flotante
 :hi FloatermBorder guifg=#CF8F05
+"No background
+:hi normal guibg=NONE ctermbg=NONE
 "colorizar
 lua require 'colorizer'.setup()
 "Remapeo
@@ -106,7 +96,8 @@ nnoremap <M-j> :resize -2<CR>
 nnoremap <M-k> :resize +2<CR>
 nnoremap <M-h> :vertical resize -2<CR>
 nnoremap <M-l> :vertical resize +2<CR>
-
+autocmd FileType cs nmap <silent> <buffer> <Leader>osca <Plug>(omnisharp_code_actions)
+autocmd FileType cs xmap <silent> <buffer> <Leader>osca <Plug>(omnisharp_code_actions)
 "Comandos de prettier
 nmap <leader>f :Prettier<CR>
 "To map <Esc> to exit terminal-mode:
