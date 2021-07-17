@@ -28,7 +28,8 @@
     "okular",
     "posx",
     "pyplot",
-    "startify"
+    "startify",
+    "vuetify"
   ],
   "python.jediEnabled": false,
 
