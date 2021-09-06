@@ -37,7 +37,7 @@
 
   "snippets.userSnippetsDirectory": "~/AppData/Local/nvim/snips",
 
-  "coc.source.emoji.filetypes": ["markdown", "javascript"],
+  "coc.source.emoji.filetypes": ["markdown", "javascript","text"],
 
   "suggest.completionItemKindLabels": {
     "method": "  ",

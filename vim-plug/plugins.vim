@@ -41,6 +41,8 @@ Plug 'vim-scripts/dbext.vim'
 "Flutter config
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'thosakwe/vim-flutter'
+"Go
+"Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 
