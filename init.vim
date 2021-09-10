@@ -27,6 +27,7 @@ set t_Co=256
 set termguicolors
 set ruler
 set encoding=utf-8
+set title
 set showmatch
 set laststatus=2
 set incsearch
@@ -37,14 +38,21 @@ set guioptions=i
 set expandtab
 set showcmd
 set noshowmode
+set cmdheight=1
 set showtabline=2
 set autochdir
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
+set smarttab
+set wildignore+=*/node_modules/*
+set formatoptions+=r
 "config color
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = "hard"
+set winblend=0
+set wildoptions=pum
+set pumblend=5
 "Color de terminal flotante
 :hi FloatermBorder guifg=#CF8F05
 "No background

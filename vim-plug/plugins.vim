@@ -19,6 +19,15 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'honza/vim-snippets'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
+if has('nvim') || has('patch-8.0.902')
+  Plug 'mhinz/vim-signify'
+else
+  Plug 'mhinz/vim-signify', { 'branch': 'legacy' }
+endif
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 "Markdown Plugin
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 "Cpp Plugin
@@ -29,10 +38,6 @@ Plug 'voldikss/vim-floaterm'
 Plug 'ianks/vim-tsx'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
-
-"C# plugins not found in pc
-"Plug 'omnisharp/omnisharp-vim'
-"Plug 'nickspoons/vim-sharpenup'
 
 "Bases de datos
 Plug 'tpope/vim-dadbod'
