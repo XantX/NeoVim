@@ -41,9 +41,9 @@ let g:startify_lists = [
           \]},
           \ ]
 let g:startify_bookmarks = [
-            \ { 'i': '~/AppData/Local/nvim/init.vim' },
-            \ {'h':'~/AppData/Roaming/Hyper/.hyper.js'},
-            \ { 'g': '~/.gitconfig ' }
+            \ {'i':' ~/AppData/Local/nvim/init.vim' },
+            \ {'h':' ~/AppData/Roaming/Hyper/.hyper.js'},
+            \ {'g':' ~/.gitconfig ' }
             \ ]
 let g:startify_session_delete_buffers = 1
 let g:startify_change_to_vcs_root = 1

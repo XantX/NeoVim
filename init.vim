@@ -21,7 +21,7 @@ set numberwidth=1
 set cursorline
 set noswapfile
 set clipboard=unnamedplus
-set scrolloff=7
+"set scrolloff=7
 set backspace=indent,eol,start
 set t_Co=256
 set termguicolors
@@ -47,6 +47,7 @@ set shiftwidth=2
 set smarttab
 set wildignore+=*/node_modules/*
 set formatoptions+=r
+set path+=**
 "config color
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = "hard"
@@ -67,6 +68,8 @@ nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 "split vertical
 nmap <Leader>vs :vsp <CR>
+nmap <Leader>F :FZF <CR>
+nmap <Leader>R :Rg <CR>
 "Apertura de configuración
 nmap <Leader>rc :e ~/AppData/Local/nvim/init.vim <CR>
 "open config windows terminal

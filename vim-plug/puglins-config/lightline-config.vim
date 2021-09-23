@@ -5,7 +5,11 @@ function! MyFiletype()
 endfunction
 
 function! MyFileformat()
-      return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+      return winwidth(0) > 70 ?  WebDevIconsGetFileFormatSymbol() : ''
+endfunction
+
+function! ShowUncommittedChangesOnGit()
+  echo !'git diff --name-only'
 endfunction
 
 function! LightlineFugitive()
@@ -20,18 +24,23 @@ function! LightlineFugitive()
       return ''
 endfunction
 
+function! GitChangeStatusLine()
+      return sy#repo#get_stats_decorated()
+endfunction
+
 let g:lightline = {
-      \ 'colorscheme': 'apprentice',
+      \ 'colorscheme': 'gruvbox',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch','readonly', 'modified','coc-status'] ],
-      \   'right': [ [ 'lineinfo' ],[  'filetype','fileformat'] ]
+      \             [ 'gitbranch','gitchanges','readonly', 'modified','coc-status'] ],
+      \   'right': [ ['lineinfo' ],[  'filetype','fileformat'] ]
       \ },
       \ 'component': {
       \   'git-logo-test': ''
       \ },
       \ 'component_function': {
       \ 'gitbranch': 'LightlineFugitive',
+      \ 'gitchanges': 'GitChangeStatusLine',
       \ 'filetype': 'MyFiletype',
       \ 'fileformat': 'MyFileformat',
       \ 'coc-status': 'coc#status'

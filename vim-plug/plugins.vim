@@ -9,16 +9,19 @@ Plug 'mhinz/vim-startify'
 Plug 'lambdalisue/battery.vim'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'itchyny/lightline.vim'
+Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'ap/vim-buftabline'
 "IDE
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 Plug 'preservim/nerdcommenter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'honza/vim-snippets'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
+Plug 'terryma/vim-multiple-cursors'
 if has('nvim') || has('patch-8.0.902')
   Plug 'mhinz/vim-signify'
 else
@@ -27,6 +30,7 @@ endif
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'unblevable/quick-scope'
 
 "Markdown Plugin
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
