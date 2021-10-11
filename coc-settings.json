@@ -7,6 +7,8 @@
     "\"",
     "`"
   ],
+  "diagnostic.errorSign": "",
+  "diagnostic.infoSign": "",
   "cSpellExt.enableDictionaries": ["spanish", "medical-terms"],
   "cSpell.language": "en,es",
   "cSpell.userWords": [
