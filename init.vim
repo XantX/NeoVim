@@ -48,6 +48,8 @@ set smarttab
 set wildignore+=*/node_modules/*
 set formatoptions+=r
 set path+=**
+lua require 'nvim-treesitter.install'.compilers = { "gcc" }
+lua require 'nvim-treesitter.configs'.setup {highlight = {enable = true}}
 "config color
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = "hard"
@@ -79,9 +81,13 @@ nmap <Leader>oh :e ~/AppData/Local/nvim/alacrityConfig/.oh-my-posh.omp.json<CR>
 "Nerdtree
 nmap <Leader>nt :NERDTreeFind<CR>
 "movimiento entre buffers
-nmap <Leader>ne :bnext<CR>
-nmap <Leader>pe :bprev<CR>
-nmap <Leader>e :bd<CR>
+nmap <Leader>ne :BufferNext<CR>
+nmap <Leader>pe :BufferPrevious<CR>
+nmap <Leader>mn :BufferMoveNext<CR>
+nmap <Leader>mp :BufferMovePrevious<CR>
+nmap <Leader>P :BufferPin<CR>
+nmap <Leader>B :BufferPick<CR>
+nmap <Leader>e :BufferClose<CR>
 "terminal
 nmap <Leader>t :vsp <CR> :terminal<CR>
 "NerdCommenter

@@ -1,7 +1,10 @@
 "Zona de plugins
 call plug#begin('~/AppData/Local/nvim/Plugins')
-"Customizations
+"Color
 Plug 'sheerun/vim-polyglot'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
+Plug 'nvim-treesitter/playground'
+"Customizations
 Plug 'morhetz/gruvbox'
 Plug 'ryanoasis/vim-devicons'
 Plug 'norcalli/nvim-colorizer.lua'
@@ -10,7 +13,10 @@ Plug 'lambdalisue/battery.vim'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'itchyny/lightline.vim'
 Plug 'shinchu/lightline-gruvbox.vim'
-Plug 'ap/vim-buftabline'
+"Tab line
+"Plug 'ap/vim-buftabline'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'romgrk/barbar.nvim'
 "IDE
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'scrooloose/nerdtree'
@@ -35,7 +41,7 @@ Plug 'unblevable/quick-scope'
 "Markdown Plugin
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 "Cpp Plugin
-Plug 'octol/vim-cpp-enhanced-highlight'
+"Plug 'octol/vim-cpp-enhanced-highlight'
 "Plugin para terminal flotante
 Plug 'voldikss/vim-floaterm'
 "React and javascript Plugins

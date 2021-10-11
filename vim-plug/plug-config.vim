@@ -8,3 +8,4 @@ source $HOME/AppData/Local/nvim/vim-plug/puglins-config/closetag-config.vim
 source $HOME/AppData/Local/nvim/vim-plug/puglins-config/lightline-config.vim
 source $HOME/AppData/Local/nvim/vim-plug/puglins-config/vim-go-config.vim
 source $HOME/AppData/Local/nvim/vim-plug/puglins-config/quickscope-config.vim
+source $HOME/AppData/Local/nvim/vim-plug/puglins-config/barbar-config.vim

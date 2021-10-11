@@ -10,8 +10,10 @@
   "cSpellExt.enableDictionaries": ["spanish", "medical-terms"],
   "cSpell.language": "en,es",
   "cSpell.userWords": [
+    "Autowired",
     "BOTTOKEN",
     "Clearbit",
+    "Embeddable",
     "Gundo",
     "Sidenav",
     "Xant",
@@ -44,6 +46,7 @@
     "ohmyposh",
     "okular",
     "posx",
+    "pygame",
     "pyplot",
     "scrooloose",
     "sheerun",
@@ -90,5 +93,5 @@
     "value": "  ",
     "enumMember": "  "
   },
-  "clangd.path": "C:\\Users\\hp_Xa\\AppData\\Local\\coc\\extensions\\coc-clangd-data\\install\\12.0.0\\clangd_12.0.0\\bin\\clangd.exe"
+  "clangd.path": "~\\AppData\\Local\\coc\\extensions\\coc-clangd-data\\install\\12.0.1\\clangd_12.0.1\\bin\\clangd.exe"
 }
