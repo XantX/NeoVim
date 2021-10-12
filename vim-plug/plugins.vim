@@ -1,25 +1,28 @@
 "Zona de plugins
 call plug#begin('~/AppData/Local/nvim/Plugins')
 "Color
+Plug 'morhetz/gruvbox'
 Plug 'sheerun/vim-polyglot'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
 Plug 'nvim-treesitter/playground'
-"Customizations
-Plug 'morhetz/gruvbox'
-Plug 'ryanoasis/vim-devicons'
 Plug 'norcalli/nvim-colorizer.lua'
+"Customizations
+Plug 'ryanoasis/vim-devicons'
 Plug 'mhinz/vim-startify'
-Plug 'lambdalisue/battery.vim'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+"Status bar
 Plug 'itchyny/lightline.vim'
 Plug 'shinchu/lightline-gruvbox.vim'
+"File explorer
+Plug 'kyazdani42/nvim-tree.lua'
+"Plug 'scrooloose/nerdtree'
+"Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 "Tab line
 "Plug 'ap/vim-buftabline'
 Plug 'kyazdani42/nvim-web-devicons'
+"Tab bar
 Plug 'romgrk/barbar.nvim'
 "IDE
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'preservim/nerdcommenter'

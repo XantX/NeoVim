@@ -2,12 +2,12 @@ set termguicolors
 "config color
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = "hard"
-"Color de los codigos HEX
+"Color de los códigos HEX
 lua require 'colorizer'.setup()
 
 "Configurarion de treesitter
 lua require 'nvim-treesitter.install'.compilers = { "gcc" }
-lua require 'nvim-treesitter.configs'.setup {highlight = {enable = true}}
+lua require 'nvim-treesitter.configs'.setup {highlight = {enable = true, disable = {"vim"}}}
 
 "Color de terminal flotante
 :hi FloatermBorder guifg=#CF8F05

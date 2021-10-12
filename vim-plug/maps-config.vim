@@ -15,7 +15,8 @@ nmap <Leader>ra :e ~/AppData/Roaming/alacritty/alacritty.yml<CR>
 "open ohmyposh config
 nmap <Leader>oh :e ~/AppData/Local/nvim/alacrityConfig/.oh-my-posh.omp.json<CR>
 "Nerdtree
-nmap <Leader>nt :NERDTreeFind<CR>
+"nmap <Leader>nt :NERDTreeFind<CR>
+nmap <Leader>nt :NvimTreeToggle<CR>
 "movimiento entre buffers
 nmap <Leader>ne :BufferNext<CR>
 nmap <Leader>pe :BufferPrevious<CR>
