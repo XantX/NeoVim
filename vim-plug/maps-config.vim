@@ -6,8 +6,8 @@ nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 "split vertical
 nmap <Leader>vs :vsp <CR>
-nmap <Leader>F :FZF <CR>
-nmap <Leader>R :Rg <CR>
+nmap <Leader>F :Telescope fd <CR>
+nmap <Leader>R :Telescope live_grep <CR>
 "Apertura de configuración
 nmap <Leader>rc :e ~/AppData/Local/nvim/init.vim <CR>
 "open config windows terminal

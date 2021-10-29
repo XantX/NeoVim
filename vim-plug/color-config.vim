@@ -7,7 +7,7 @@ lua require 'colorizer'.setup()
 
 "Configurarion de treesitter
 lua require 'nvim-treesitter.install'.compilers = { "gcc" }
-lua require 'nvim-treesitter.configs'.setup {highlight = {enable = true, disable = {"vim"}}}
+lua require 'nvim-treesitter.configs'.setup {highlight = {enable = true, disable = {"vim","vue"}}}
 
 "Color de terminal flotante
 :hi FloatermBorder guifg=#CF8F05

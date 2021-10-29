@@ -14,10 +14,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'shinchu/lightline-gruvbox.vim'
 "File explorer
 Plug 'kyazdani42/nvim-tree.lua'
-"Plug 'scrooloose/nerdtree'
-"Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 "Tab line
-"Plug 'ap/vim-buftabline'
 Plug 'kyazdani42/nvim-web-devicons'
 "Tab bar
 Plug 'romgrk/barbar.nvim'
@@ -39,19 +36,23 @@ endif
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+"Another fuzzy finder
+"TODO: Install
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
 Plug 'unblevable/quick-scope'
 
 "Markdown Plugin
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-"Cpp Plugin
-"Plug 'octol/vim-cpp-enhanced-highlight'
 "Plugin para terminal flotante
 Plug 'voldikss/vim-floaterm'
 "React and javascript Plugins
 Plug 'ianks/vim-tsx'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
-
+"vue
+Plug 'storyn26383/vim-vue'
 "Bases de datos
 Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
@@ -62,5 +63,3 @@ Plug 'thosakwe/vim-flutter'
 "Go
 "Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
-
-

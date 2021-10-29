@@ -5,3 +5,5 @@ command! CustomTreeOpen lua require("custom.tree").open()
 command! CustomTreeClose lua require("custom.tree").close()
 command! CustomTreeToggle lua require("custom.tree").toggle()
 let g:nvim_tree_quit_on_open = 1
+let g:nvim_tree_group_empty = 1
+let g:nvim_tree_respect_buf_cwd = 1

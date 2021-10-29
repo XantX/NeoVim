@@ -36,13 +36,11 @@ set showcmd
 set noshowmode
 set cmdheight=1
 set showtabline=2
-set autochdir
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set smarttab
 set wildignore+=*/node_modules/*
-set formatoptions+=r
 set path+=**
 set winblend=0
 set wildoptions=pum
