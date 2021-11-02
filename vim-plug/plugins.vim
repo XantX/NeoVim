@@ -2,7 +2,7 @@
 call plug#begin('~/AppData/Local/nvim/Plugins')
 "Color
 Plug 'morhetz/gruvbox'
-Plug 'sheerun/vim-polyglot'
+"Plug 'sheerun/vim-polyglot'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
 Plug 'nvim-treesitter/playground'
 Plug 'norcalli/nvim-colorizer.lua'
@@ -33,9 +33,11 @@ if has('nvim') || has('patch-8.0.902')
 else
   Plug 'mhinz/vim-signify', { 'branch': 'legacy' }
 endif
-
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+if has('nvim')
+  Plug 'gelguy/wilder.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'gelguy/wilder.nvim'
+endif
 "Another fuzzy finder
 "TODO: Install
 Plug 'nvim-lua/plenary.nvim'
