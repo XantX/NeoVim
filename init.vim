@@ -27,8 +27,8 @@ set title
 set showmatch
 set laststatus=2
 set incsearch
-"set wildmenu
-set wildoptions+=pum
+set wildmenu
+"set wildoptions+=pum
 set autoindent
 set smartindent
 set guioptions=i
