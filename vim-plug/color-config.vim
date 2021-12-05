@@ -6,7 +6,7 @@ let g:gruvbox_contrast_dark = "hard"
 lua require 'colorizer'.setup()
 
 "Configurarion de treesitter
-lua require 'nvim-treesitter.install'.compilers = { "gcc" }
+"lua require 'nvim-treesitter.install'.compilers = { "gcc" }
 lua require 'nvim-treesitter.configs'.setup {highlight = {enable = true, disable = {"vim","vue"}}}
 
 "Color de terminal flotante

@@ -2,9 +2,8 @@
 call plug#begin('~/AppData/Local/nvim/Plugins')
 "Color
 Plug 'morhetz/gruvbox'
-"Plug 'sheerun/vim-polyglot'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
-Plug 'nvim-treesitter/playground'
+"Plug 'nvim-treesitter/playground'
 Plug 'norcalli/nvim-colorizer.lua'
 "Customizations
 Plug 'ryanoasis/vim-devicons'
@@ -23,11 +22,24 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'preservim/nerdcommenter'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'honza/vim-snippets'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
-Plug 'terryma/vim-multiple-cursors'
+Plug 'jiangmiao/auto-pairs'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+"if has("nvim")
+  "Plug 'neovim/nvim-lspconfig'
+"endif
+"Plug 'hrsh7th/cmp-nvim-lsp'
+"Plug 'hrsh7th/cmp-buffer'
+"Plug 'hrsh7th/cmp-path'
+"Plug 'hrsh7th/cmp-cmdline'
+"Plug 'hrsh7th/nvim-cmp'
+" For ultisnips users.
+"Plug 'SirVer/ultisnips'
+"Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+
 if has('nvim') || has('patch-8.0.902')
   Plug 'mhinz/vim-signify'
 else

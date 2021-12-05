@@ -29,30 +29,26 @@ nmap <Leader>t :vsp <CR> :terminal<CR>
 "NerdCommenter
 nmap <Leader>c <plug>NERDCommenterToggle
 vmap <Leader>c <plug>NERDCommenterToggle<cr>gv
-"Spell checker
-nmap <Leader>a <Plug>(coc-codeaction-selected)
-nmap <Leader>cf <Plug>(coc-format)
-" GoTo code navigation Coc
+" LSP config (the mappings used in the default file don't quite work right)
+"nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
+"nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
+"nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> rn <Plug>(coc-rename)
-"comandos para pasar de espacio de escritura en snippets
-" Use <C-j> for jump to next placeholder, it's default of coc.nvim
-let g:coc_snippet_next = '<c-j>'
-
-" Use <C-k> for jump to previous placeholder, it's default of coc.nvim
-let g:coc_snippet_prev = '<c-k>'
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+nmap <Leader>a <Plug>(coc-codeaction-selected)
+nmap <Leader>cf <Plug>(coc-format)
 "Comandos para hacer resize con alt
 nnoremap <M-j> :resize -2<CR>
 nnoremap <M-k> :resize +2<CR>
 nnoremap <M-h> :vertical resize -2<CR>
 nnoremap <M-l> :vertical resize +2<CR>
-autocmd FileType cs nmap <silent> <buffer> <Leader>osca <Plug>(omnisharp_code_actions)
-autocmd FileType cs xmap <silent> <buffer> <Leader>osca <Plug>(omnisharp_code_actions)
 "Comandos de prettier
-nmap <leader>f :Prettier<CR>
+"nmap <leader>f :Prettier<CR>
 "To map <Esc> to exit terminal-mode:
 :tnoremap <Esc> <C-\><C-n>
 

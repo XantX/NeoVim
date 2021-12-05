@@ -7,9 +7,8 @@
             "\' █████ █████░░████████ ████ █████  ░░█████  █████ █████',
             "\'░░░░░ ░░░░░  ░░░░░░░░ ░░░░ ░░░░░    ░░░░░  ░░░░░ ░░░░░ ',
             "------------------------------------------------------------
-
+            
 source $HOME/AppData/Local/nvim/vim-plug/plugins.vim
-source $HOME/AppData/Local/nvim/vim-plug/plug-config.vim
 syntax on
 filetype plugin on
 set rnu
@@ -48,4 +47,5 @@ set wildoptions=pum
 set pumblend=5
 "Color config
 source $HOME/AppData/Local/nvim/vim-plug/color-config.vim
+source $HOME/AppData/Local/nvim/vim-plug/plug-config.vim
 source $HOME/AppData/Local/nvim/vim-plug/maps-config.vim
