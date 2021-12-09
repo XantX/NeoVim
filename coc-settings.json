@@ -1,12 +1,5 @@
 {
-  "pairs.enableCharacters": [
-    "(",
-    "[",
-    "{",
-    "'",
-    "\"",
-    "`"
-  ],
+  "powershell.integratedConsole.showOnStartup": false, 
   "diagnostic.errorSign": "",
   "diagnostic.infoSign": "",
   "cSpellExt.enableDictionaries": ["spanish", "medical-terms"],
