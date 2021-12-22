@@ -52,11 +52,8 @@ font:
     family: "FiraCode NF"
     style: Bold 
   italic:
-    family: "Fira Code NF"
-    style: Italic
-  bold_italic:
-    family: "Fira Code NF"
-    style: Bold Italic
+    family: "Fira Code"
+    style: "Medium Italic"
 
 # Point size
   size: 15.0

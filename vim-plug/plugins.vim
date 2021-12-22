@@ -7,7 +7,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'norcalli/nvim-colorizer.lua'
 "Customizations
 Plug 'ryanoasis/vim-devicons'
-Plug 'mhinz/vim-startify'
+Plug 'glepnir/dashboard-nvim'
 "Status bar
 Plug 'itchyny/lightline.vim'
 Plug 'shinchu/lightline-gruvbox.vim'
@@ -26,19 +26,19 @@ Plug 'honza/vim-snippets'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-"if has("nvim")
-  "Plug 'neovim/nvim-lspconfig'
-"endif
-"Plug 'hrsh7th/cmp-nvim-lsp'
-"Plug 'hrsh7th/cmp-buffer'
-"Plug 'hrsh7th/cmp-path'
-"Plug 'hrsh7th/cmp-cmdline'
-"Plug 'hrsh7th/nvim-cmp'
-" For ultisnips users.
-"Plug 'SirVer/ultisnips'
-"Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+if has("nvim")
+  Plug 'neovim/nvim-lspconfig'
+  Plug 'williamboman/nvim-lsp-installer'
+endif
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+"" For ultisnips users.
+Plug 'SirVer/ultisnips'
+Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
 if has('nvim') || has('patch-8.0.902')
   Plug 'mhinz/vim-signify'
@@ -54,7 +54,6 @@ endif
 "TODO: Install
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-
 Plug 'unblevable/quick-scope'
 
 "Markdown Plugin
@@ -74,6 +73,7 @@ Plug 'vim-scripts/dbext.vim'
 "Flutter config
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'thosakwe/vim-flutter'
+"Plug 'akinsho/flutter-tools.nvim'
 "Go
 "Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()

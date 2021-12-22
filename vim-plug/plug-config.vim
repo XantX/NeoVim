@@ -1,8 +1,7 @@
 source $HOME/AppData/Local/nvim/vim-plug/puglins-config/markdown-config.vim
-source $HOME/AppData/Local/nvim/vim-plug/puglins-config/coc-config.vim
-"source $HOME/AppData/Local/nvim/vim-plug/puglins-config/lspconfig.rc.vim
+source $HOME/AppData/Local/nvim/vim-plug/puglins-config/lspconfig.rc.vim
 source $HOME/AppData/Local/nvim/vim-plug/puglins-config/prettier-config.vim
-source $HOME/AppData/Local/nvim/vim-plug/puglins-config/startify-config.vim
+source $HOME/AppData/Local/nvim/vim-plug/puglins-config/dashboard-config.vim
 source $HOME/AppData/Local/nvim/vim-plug/puglins-config/floaterm-config.vim
 source $HOME/AppData/Local/nvim/vim-plug/puglins-config/nvim-tree-config.vim
 source $HOME/AppData/Local/nvim/vim-plug/puglins-config/closetag-config.vim
@@ -13,3 +12,4 @@ source $HOME/AppData/Local/nvim/vim-plug/puglins-config/barbar-config.vim
 source $HOME/AppData/Local/nvim/vim-plug/puglins-config/signify-config.vim
 source $HOME/AppData/Local/nvim/vim-plug/puglins-config/telescope-config.vim
 source $HOME/AppData/Local/nvim/vim-plug/puglins-config/wildmenu-config.vim
+"source $HOME/AppData/Local/nvim/vim-plug/puglins-config/flutter-config.vim
