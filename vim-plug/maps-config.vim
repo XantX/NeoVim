@@ -6,6 +6,7 @@ nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 "split vertical
 nmap <Leader>vs :vsp <CR>
+nmap <Leader>hs :sp <CR>
 nmap <Leader>F :Telescope fd <CR>
 nmap <Leader>R :Telescope live_grep <CR>
 "Apertura de configuración
