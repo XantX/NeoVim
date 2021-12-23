@@ -13,14 +13,14 @@ npm install -g neovim
 
 ```
 
-Install Yarn
+### Install Yarn
 
 ```bash
 
 npm install --global yarn
 
 ```
-### Install Ruby :airplane:
+### Install Ruby :small_blue_diamond:
 
 [Ruby](https://www.ruby-lang.org/en/)
 
