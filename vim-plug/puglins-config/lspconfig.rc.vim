@@ -72,8 +72,10 @@ lua << EOF
     sources = cmp.config.sources({
 			{ name = 'ultisnips' },
       { name = 'nvim_lsp' },
+      { name = 'nvim_lua' },
     }, {
       { name = 'buffer' },
+      { name = 'path' },
     })
   })
 

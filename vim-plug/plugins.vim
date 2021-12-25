@@ -26,7 +26,7 @@ Plug 'honza/vim-snippets'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
-
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 if has("nvim")
   Plug 'neovim/nvim-lspconfig'
   Plug 'williamboman/nvim-lsp-installer'

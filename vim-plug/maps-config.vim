@@ -2,6 +2,7 @@
 "Atajos
 let mapleader = " "
 "Guargar y cerrar
+nmap <Leader>p :PrettierAsync<CR>
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 "split vertical
@@ -31,28 +32,19 @@ nmap <Leader>t :vsp <CR> :terminal<CR>
 nmap <Leader>c <plug>NERDCommenterToggle
 vmap <Leader>c <plug>NERDCommenterToggle<cr>gv
 " LSP config (the mappings used in the default file don't quite work right)
-nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
-nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
-nnoremap <Leader> rn <cmd>lua vim.lsp.buf.rename()<CR>
-nnoremap <Leader> ca <cmd>lua vim.lsp.buf.code_action()<CR>
-nnoremap <Leader> cf <cmd>lua vim.lsp.buf.formatting()<CR>
-nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>
-" GoTo code navigation.
-"nmap <silent> gd <Plug>(coc-definition)
-"nmap <silent> gy <Plug>(coc-type-definition)
-"nmap <silent> gi <Plug>(coc-implementation)
-"nmap <silent> gr <Plug>(coc-references)
-" Use K to show documentation in preview window.
-"nnoremap <silent> K :call <SID>show_documentation()<CR>
-nmap <Leader>a <Plug>(coc-codeaction-selected)
-nmap <Leader>cf <Plug>(coc-format)
+nmap  <Leader>f <cmd>lua vim.lsp.buf.formatting()<CR>
+nmap <Leader>r <cmd>lua vim.lsp.buf.rename()<CR>
+nnoremap <Leader>ca <cmd>lua vim.lsp.buf.code_action()<CR>
+nnoremap <silent>gd <cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <silent>gr <cmd>lua vim.lsp.buf.references()<CR>
+nnoremap <silent>K <cmd>lua vim.lsp.buf.hover()<CR>
 "Comandos para hacer resize con alt
 nnoremap <M-j> :resize -2<CR>
 nnoremap <M-k> :resize +2<CR>
 nnoremap <M-h> :vertical resize -2<CR>
 nnoremap <M-l> :vertical resize +2<CR>
 "Comandos de prettier
-nmap <leader>f :Prettier<CR>
+"nmap <leader>f :Prettier<CR>
 "To map <Esc> to exit terminal-mode:
 :tnoremap <Esc> <C-\><C-n>
 
