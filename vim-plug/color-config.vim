@@ -1,10 +1,8 @@
 set termguicolors
 "config color
+let g:gruvbox_italic=1
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = "hard"
-highlight Comment cterm=italic
-set t_ZH=^[[3m
-set t_ZR=^[[23m
 "Color de los códigos HEX
 lua require 'colorizer'.setup()
 

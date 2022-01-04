@@ -46,7 +46,6 @@ set path+=**
 set winblend=0
 set wildoptions=pum
 set pumblend=5
-"Color config
 source $HOME/AppData/Local/nvim/vim-plug/color-config.vim
 source $HOME/AppData/Local/nvim/vim-plug/plug-config.vim
 source $HOME/AppData/Local/nvim/vim-plug/maps-config.vim
