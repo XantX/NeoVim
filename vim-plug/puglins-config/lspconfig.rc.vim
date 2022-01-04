@@ -32,7 +32,7 @@ lua << EOF
   cmp.setup({
     snippet = {
       expand = function(args)
-        vim.fn["UltiSnips#Anon"](args.body)
+        vim.fn["vsnip#anonymous"](args.body)
       end,
     },
     experimental ={
@@ -59,7 +59,8 @@ lua << EOF
         vim_item.menu = ({
           nvim_lsp = "[LSP]",
           nvim_lua = "[NVIM_LUA]",
-          ultisnips = "[Snippet]",
+          ultisnips = "[Ultisnips]",
+          vsnip = "[Vsnip]",
           buffer = "[Buffer]",
           path = "[Path]",
         })[entry.source.name]
@@ -71,6 +72,7 @@ lua << EOF
 		},
     sources = cmp.config.sources({
 			{ name = 'ultisnips' },
+      { name = 'vsnip' },
       { name = 'nvim_lsp' },
       { name = 'nvim_lua' },
     }, {
@@ -81,10 +83,11 @@ lua << EOF
 
   local capabilitiesCMP = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
   local lsp_installer = require("nvim-lsp-installer")
+
   lsp_installer.on_server_ready(function(server)
-  local opts = {
-      capabilities = capabilitiesCMP
-    }
+    local opts = {
+        capabilities = capabilitiesCMP
+      }
       server:setup(opts)
   end)
 EOF

@@ -1,3 +1,7 @@
 lua << EOF
-  require("flutter-tools").setup{} -- use defaults
+  require("flutter-tools").setup{
+    lsp = {
+      capabilities = capabilitiesCMP
+      }
+  } -- use defaults
 EOF

@@ -34,7 +34,7 @@ vmap <Leader>c <plug>NERDCommenterToggle<cr>gv
 " LSP config (the mappings used in the default file don't quite work right)
 nmap  <Leader>f <cmd>lua vim.lsp.buf.formatting()<CR>
 nmap <Leader>r <cmd>lua vim.lsp.buf.rename()<CR>
-nnoremap <Leader>ca <cmd>lua vim.lsp.buf.code_action()<CR>
+nmap <Leader>a <cmd>lua vim.lsp.buf.code_action()<CR>
 nnoremap <silent>gd <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <silent>gr <cmd>lua vim.lsp.buf.references()<CR>
 nnoremap <silent>K <cmd>lua vim.lsp.buf.hover()<CR>

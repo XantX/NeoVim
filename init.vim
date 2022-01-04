@@ -28,7 +28,7 @@ set laststatus=2
 set incsearch
 set wildmenu
 "set wildoptions+=pum
-set autochdir
+"set autochdir
 set autoindent
 set smartindent
 set guioptions=i

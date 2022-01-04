@@ -1,5 +1,6 @@
 source $HOME/AppData/Local/nvim/vim-plug/puglins-config/markdown-config.vim
 source $HOME/AppData/Local/nvim/vim-plug/puglins-config/lspconfig.rc.vim
+"source $HOME/AppData/Local/nvim/vim-plug/puglins-config/flutter-config.vim
 source $HOME/AppData/Local/nvim/vim-plug/puglins-config/prettier-config.vim
 source $HOME/AppData/Local/nvim/vim-plug/puglins-config/dashboard-config.vim
 source $HOME/AppData/Local/nvim/vim-plug/puglins-config/floaterm-config.vim
