@@ -2,6 +2,9 @@ set termguicolors
 "config color
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = "hard"
+highlight Comment cterm=italic
+set t_ZH=^[[3m
+set t_ZR=^[[23m
 "Color de los códigos HEX
 lua require 'colorizer'.setup()
 
@@ -11,8 +14,6 @@ lua require 'nvim-treesitter.configs'.setup {highlight = {enable = true, disable
 
 "Color de terminal flotante
 :hi FloatermBorder guifg=#CF8F05
-
-highlight Comment cterm=italic
 
 "No background
 :hi normal guibg=NONE ctermbg=NONE
