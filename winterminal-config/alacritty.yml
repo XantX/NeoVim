@@ -58,9 +58,10 @@ font:
 # Point size
   size: 15.0
 
-background_opacity: 0.70 
+
 
 window:
+  opacity: 0.70 
   dynamic_padding: false
   decorations: None 
   dimensions:

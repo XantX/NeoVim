@@ -75,4 +75,7 @@ Plug 'dart-lang/dart-vim-plugin'
 "Plug 'thosakwe/vim-flutter'
 "Go
 "Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+"Rust
+Plug 'simrat39/rust-tools.nvim'
+Plug 'mfussenegger/nvim-dap'
 call plug#end()
