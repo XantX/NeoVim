@@ -11,8 +11,6 @@ if ($host.Name -eq 'ConsoleHost')
 }
 Import-Module -Name Terminal-Icons
 Import-Module oh-my-posh
-Import-Module PSFzf
-Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
 oh-my-posh --init --shell pwsh --config ~/AppData/Local/nvim/winterminal-config/.oh-my-posh.omp.json | Invoke-Expression
 Set-PSReadLineOption -PredictionSource History
