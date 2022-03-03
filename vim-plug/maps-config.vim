@@ -2,7 +2,7 @@
 "Atajos
 let mapleader = " "
 "Guargar y cerrar
-nmap <Leader>p :PrettierAsync<CR>
+nmap <Leader>p :Prettier<CR>
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 "split vertical
