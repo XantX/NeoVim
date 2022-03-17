@@ -35,6 +35,7 @@ vmap <Leader>c <plug>NERDCommenterToggle<cr>gv
 nmap  <Leader>f <cmd>lua vim.lsp.buf.formatting()<CR>
 nmap <Leader>r <cmd>lua vim.lsp.buf.rename()<CR>
 nmap <Leader>a <cmd>lua vim.lsp.buf.code_action()<CR>
+nnoremap <Leader><Leader>db :tab DBUI <CR>
 nnoremap <silent>gd <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <silent>gr <cmd>lua vim.lsp.buf.references()<CR>
 nnoremap <silent>K <cmd>lua vim.lsp.buf.hover()<CR>

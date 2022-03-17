@@ -13,3 +13,4 @@ source $HOME/AppData/Local/nvim/vim-plug/puglins-config/barbar-config.vim
 source $HOME/AppData/Local/nvim/vim-plug/puglins-config/signify-config.vim
 source $HOME/AppData/Local/nvim/vim-plug/puglins-config/telescope-config.vim
 source $HOME/AppData/Local/nvim/vim-plug/puglins-config/wildmenu-config.vim
+source $HOME/AppData/Local/nvim/vim-plug/puglins-config/dbui.vim

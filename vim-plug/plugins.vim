@@ -41,7 +41,7 @@ Plug 'SirVer/ultisnips'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
-Plug 'Neevash/awesome-flutter-snippets'
+"Plug 'Neevash/awesome-flutter-snippets'
 
 if has('nvim') || has('patch-8.0.902')
   Plug 'mhinz/vim-signify'
@@ -70,12 +70,15 @@ Plug 'pangloss/vim-javascript'
 "vue
 Plug 'storyn26383/vim-vue'
 "Flutter config
-Plug 'akinsho/flutter-tools.nvim'
-Plug 'dart-lang/dart-vim-plugin'
+"Plug 'akinsho/flutter-tools.nvim'
+"Plug 'dart-lang/dart-vim-plugin'
 "Plug 'thosakwe/vim-flutter'
 "Go
 "Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 "Rust
-Plug 'simrat39/rust-tools.nvim'
-Plug 'mfussenegger/nvim-dap'
+"Plug 'simrat39/rust-tools.nvim'
+"Plug 'mfussenegger/nvim-dap'
+"Bases de datos
+Plug 'kristijanhusak/vim-dadbod-ui'
+Plug 'tpope/vim-dadbod'
 call plug#end()
