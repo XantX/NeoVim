@@ -67,9 +67,9 @@ lua << EOF
         return vim_item
       end,
     },
-		documentation = {
-			border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
-		},
+    window = {
+      documentation = cmp.config.window.bordered(),
+    },
     sources = cmp.config.sources({
 			{ name = 'ultisnips' },
       { name = 'vsnip' },
